@@ -9,6 +9,7 @@ import axios from "axios";
 
 axios.defaults.headers.common["Authorization"] =
   "Bearer " + localStorage.getItem("jsonwebtoken");
+axios.defaults.baseURL = "https://capitalmoviesforyou.herokuapp.com/";
 
 ReactDOM.render(
   <Router>
